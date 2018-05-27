@@ -12,7 +12,7 @@
                                                    title="<%t SilverShop\Generic.ReadMoreTitle "Click here to read more on &quot;{Title}&quot;" Title=$Title %>">$Title</a>
             </h3>
             <div class="card-text">$Content</div>
-            <div class="mt-auto">
+            <div class="align-items-end">
             <% include SilverShop\Includes\Price %>
             </div>
 
