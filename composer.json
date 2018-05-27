@@ -1,21 +1,19 @@
 {
-    "name": "suilven/utils-theme",
-    "description": "Bootstrap 4 based snippets used by other themes",
+    "name": "suilven/shop-ss4-bootstrap4-theme",
+    "description": "Bootstrap 4 base theme for SilverShop, SS4",
     "type": "silverstripe-theme",
     "keywords": [
         "silverstripe",
         "theme",
         "suilven",
-        "partial",
-        "snippets",
-        "utils"
+        "shop"
     ],
     "license": "BSD-3-Clause",
     "require": {
 
     },
     "extra": {
-        "installer-name": "utils"
+        "installer-name": "shop"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
