@@ -4,15 +4,10 @@
             <h1>$Title</h1>
             $Content
             <% if $Products %>
-                <div id="Products" class="category">
-                    <%-- include Sorter --%>
-                    <div class="clear"><!-- --></div>
-                    <ul class="productList">
+                <div id="Products" class="category row">
                         <% loop $Products %>
                             <% include SilverShop\Includes\ProductGroupItem %>
                         <% end_loop %>
-                    </ul>
-                    <div class="clear"><!-- --></div>
                     <% with $Products %><% include PageFurniture/Pagination %><% end_with %>
                 </div>
             <% end_if %>
