@@ -1,0 +1,22 @@
+{
+    "name": "suilven/utils-theme",
+    "description": "Bootstrap 4 based snippets used by other themes",
+    "type": "silverstripe-theme",
+    "keywords": [
+        "silverstripe",
+        "theme",
+        "suilven",
+        "partial",
+        "snippets",
+        "utils"
+    ],
+    "license": "BSD-3-Clause",
+    "require": {
+
+    },
+    "extra": {
+        "installer-name": "utils"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
