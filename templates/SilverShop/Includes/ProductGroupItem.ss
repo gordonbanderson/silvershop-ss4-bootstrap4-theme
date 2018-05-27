@@ -3,7 +3,7 @@
         <% if $Image %>
             <a href="$Link"
                title="<%t SilverShop\Generic.ReadMoreTitle "Click here to read more on &quot;{Title}&quot;" Title=$Title %>">
-                <img class="card-img-top" src="$Image.Thumbnail(200,200).URL"
+                <img class="card-img-top" src="$Image.FocusFill(200,200).URL"
                      alt="<%t SilverShop\Page\Product.ImageAltText "{Title} image" Title=$Title %>"/>
             </a>
         <% end_if %>
@@ -12,9 +12,6 @@
                                                    title="<%t SilverShop\Generic.ReadMoreTitle "Click here to read more on &quot;{Title}&quot;" Title=$Title %>">$Title</a>
             </h3>
             <div class="card-text">$Content</div>
-            <div class="align-items-end">
-            <% include SilverShop\Includes\Price %>
-            </div>
 
             <% if $Model %><p><strong><%t SilverShop\Page\Product.Model "Model" %>:</strong> $Model.XML</p><% end_if %>
 
@@ -38,6 +35,9 @@
                     </div>
                 <% end_if %>
             <% end_if %>
+        </div>
+        <div class="card-footer">
+            <% include SilverShop\Includes\Price %>
         </div>
     </div>
 </div>

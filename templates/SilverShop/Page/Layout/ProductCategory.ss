@@ -8,8 +8,9 @@
                         <% loop $Products %>
                             <% include SilverShop\Includes\ProductGroupItem %>
                         <% end_loop %>
-                    <% with $Products %><% include PageFurniture/Pagination %><% end_with %>
                 </div>
+                <% with $Products %><% include PageFurniture/Pagination %><% end_with %>
+
             <% end_if %>
         </article>
 
