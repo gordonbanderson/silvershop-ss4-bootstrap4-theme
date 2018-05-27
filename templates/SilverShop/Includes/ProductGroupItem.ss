@@ -1,4 +1,4 @@
-<div class="col-sm-6 col-lg-4">
+<div class="col-sm-6 col-lg-4 d-flex">
     <div class="card mb-4">
         <% if $Image %>
             <a href="$Link"
@@ -11,8 +11,10 @@
             <h3 class="card-title productTitle"><a href="$Link"
                                                    title="<%t SilverShop\Generic.ReadMoreTitle "Click here to read more on &quot;{Title}&quot;" Title=$Title %>">$Title</a>
             </h3>
-            <p class="card-text">Some example text.</p>
+            <div class="card-text">$Content</div>
+            <div class="mt-auto">
             <% include SilverShop\Includes\Price %>
+            </div>
 
             <% if $Model %><p><strong><%t SilverShop\Page\Product.Model "Model" %>:</strong> $Model.XML</p><% end_if %>
 
