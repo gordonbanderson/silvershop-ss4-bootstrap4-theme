@@ -7,7 +7,7 @@
         <% if $ShowInTable %>
             <tr class="modifierRow $EvenOdd $FirstLast $Classes">
                 <td colspan="4" scope="row">$TableTitle</td>
-                <td class="right">$TableValue.Nice</td>
+                <td class="right">$TableValue.Nice.RAW</td>
             </tr>
         <% end_if %>
     <% end_loop %>
