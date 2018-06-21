@@ -16,13 +16,13 @@
             <% end_if %>
             <div class="cartfooter">
                 <% if $ContinueLink %>
-                    <a class="continuelink button" href="$ContinueLink">
+                    <a class="continuelink btn btn-primary" href="$ContinueLink">
                         <%t SilverShop\Cart\ShoppingCart.ContinueShopping 'Continue Shopping' %>
                     </a>
                 <% end_if %>
                 <% if $Cart %>
                     <% if $CheckoutLink %>
-                        <a class="checkoutlink button" href="$CheckoutLink">
+                        <a class="btn btn-primary" href="$CheckoutLink">
                             <%t SilverShop\Cart\ShoppingCart.ProceedToCheckout 'Proceed to Checkout' %>
                         </a>
                     <% end_if %>
