@@ -1,26 +1,31 @@
 <% require css("silvershop/core: client/dist/css/checkout.css") %>
 
-<h1 class="pageTitle">$Title</h1>
-<div id="Checkout">
-    <div class="typography">
 
-        <% if $PaymentErrorMessage %>
-            <p class="message error">
-            <%t SilverShop\Page\CheckoutPage.PaymentErrorMessage 'Received error from payment gateway:' %>
-            $PaymentErrorMessage
-            </p>
-        <% end_if %>
+<div class="container content typography" id="Checkout">
+    <div class="row">
+        <article class="col-md-12">
+            <div class="breadcrumbs">$Breadcrumbs</div>
 
-        <% if $Content %>
+            <h1>$Title</h1>
+
+            <% if $PaymentErrorMessage %>
+                <div class="message error alert alert-danger">
+                    <%t SilverShop\Page\CheckoutPage.PaymentErrorMessage 'Received error from payment gateway:' %>
+                    $PaymentErrorMessage
+                </div>
+            <% end_if %>
+
             $Content
-        <% end_if %>
+
+            <% if $Cart %>
+                <% with $Cart %>
+                    <% include SilverShop\Cart\Cart ShowSubtotals=true %>
+                <% end_with %>
+                $OrderForm
+            <% else %>
+                <div class="alert alert-warning message warning"><%t SilverShop\Cart\ShoppingCart.NoItems "There are no items in your cart." %></div>
+            <% end_if %>
+
+        </article>
     </div>
-    <% if $Cart %>
-        <% with $Cart %>
-            <% include SilverShop\Cart\Cart ShowSubtotals=true %>
-        <% end_with %>
-        $OrderForm
-    <% else %>
-        <p class="message warning"><%t SilverShop\Cart\ShoppingCart.NoItems "There are no items in your cart." %></p>
-    <% end_if %>
 </div>
