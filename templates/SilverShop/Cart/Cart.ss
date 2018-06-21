@@ -81,7 +81,7 @@
                                         $TableTitle
                                     <% end_if %>
                                 </th>
-                                <td id="$TableTotalID">$TableValue.Nice</td>
+                                <td id="$TableTotalID">$TableValue.Nice.RAW</td>
                                 <% if $Up.Editable %>
                                     <td>
                                         <% if $CanRemove %>
