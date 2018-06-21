@@ -10,7 +10,7 @@
                     $TableTitle
                     <% if $SubTitle %><small class="subtitle">($SubTitle)</small><% end_if %>
                 </td>
-                <td>$TableValue.Nice</td>
+                <td>$TableValue.Nice.RAW</td>
             </tr>
         <% end_if %>
     <% end_loop %>
