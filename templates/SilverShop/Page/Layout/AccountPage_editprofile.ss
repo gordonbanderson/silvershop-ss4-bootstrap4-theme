@@ -1,13 +1,16 @@
 <% require css("silvershop/core: client/dist/css/account.css") %>
 
-<% include SilverShop\Includes\AccountNavigation %>
-<div id="Account" class="typography">
+<div class="container content typography" id="Checkout">
+    <div class="row">
+        <article class="col-md-12">
+            <div class="breadcrumbs">$Breadcrumbs</div>
 
-    <h2 class="pagetitle">
-        <%t SilverShop\Page\AccountPage_EditProfile.Title 'Edit Profile' %>
-    </h2>
+            <h1>$Title</h1>
 
-    $EditAccountForm
-    $ChangePasswordForm
+            $Content
+            $EditAccountForm
+            $ChangePasswordForm
 
+        </article>
+    </div>
 </div>
